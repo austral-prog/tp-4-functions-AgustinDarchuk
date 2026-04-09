@@ -12,13 +12,13 @@ def is_positive(n):
 
 def classify_number(n):
     if n == 0:
-        return print("zero")
+        return "zero"
     elif is_even(n)==True and is_positive(n)==True:
-        return print("positive even")
+        return "positive even"
     elif is_even(n)==False and is_positive(n)==True:
-        return print("positive odd")
+        return "positive odd"
     elif is_even(n)==False and is_positive(n)==False:
-        return print("negative odd")
+        return "negative odd"
     elif is_even(n)==True and is_positive(n)==False:
-        return print("negative even")
+        return "negative even"
 
