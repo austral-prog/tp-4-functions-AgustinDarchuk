@@ -2,9 +2,17 @@
 
 def max_of_two(x, y):
     """Given x and y, that are 2 numbers, return the biggest number."""
-    return "ANSWER HERE" # Remove this line and implement
+    # if x >= y:
+    #     maximo = x
+    # elif y > x:
+    #     maximo = y
+    
+    maximo = max(x,y)
+    return maximo
 
 
 def max_of_three(x, y, z):
     """Given x, y and z, that are 3 numbers, return the biggest number of the three."""
-    return "ANSWER HERE" # Remove this line and implement
+    maximo = max_of_two(x,y)
+    maximo = max_of_two(maximo,z)
+    return maximo
